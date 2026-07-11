@@ -1925,7 +1925,7 @@ if ( $po4a_opts{"split"} ) {
         }
         if ( length $cmd_cat ) {
             $cmd_cat =
-              "msgcat" . $Config{_exe} . gettext_wrap_opts( $po4a_opts{"wrap-po"} ) . " -o $tmp_bigpo $cmd_cat";
+              "msgcat " . $Config{_exe} . gettext_wrap_opts( $po4a_opts{"wrap-po"} ) . " -o $tmp_bigpo $cmd_cat";
             run_cmd($cmd_cat);
         }
 
